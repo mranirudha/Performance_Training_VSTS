@@ -1,0 +1,7 @@
+C:\Performance_Training\Demo_Project\Demo_Reference\obj\Debug\Demo_Reference.csprojResolveAssemblyReference.cache
+C:\Performance_Training\Demo_Project\Demo_Reference\bin\Debug\Demo_Reference.dll
+C:\Performance_Training\Demo_Project\Demo_Reference\bin\Debug\Demo_Reference.pdb
+C:\Performance_Training\Demo_Project\Demo_Reference\bin\Debug\Microsoft.VisualStudio.QualityTools.WebTestFramework.dll
+C:\Performance_Training\Demo_Project\Demo_Reference\bin\Debug\Microsoft.VisualStudio.QualityTools.WebTestFramework.xml
+C:\Performance_Training\Demo_Project\Demo_Reference\obj\Debug\Demo_Reference.dll
+C:\Performance_Training\Demo_Project\Demo_Reference\obj\Debug\Demo_Reference.pdb

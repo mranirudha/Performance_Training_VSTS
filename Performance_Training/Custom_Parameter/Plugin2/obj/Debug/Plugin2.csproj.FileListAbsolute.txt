@@ -1,0 +1,6 @@
+C:\Performance_Training\Custom_Parameter\Plugin2\bin\Debug\Plugin2.dll
+C:\Performance_Training\Custom_Parameter\Plugin2\bin\Debug\Plugin2.pdb
+C:\Performance_Training\Custom_Parameter\Plugin2\bin\Debug\Microsoft.VisualStudio.QualityTools.WebTestFramework.dll
+C:\Performance_Training\Custom_Parameter\Plugin2\bin\Debug\Microsoft.VisualStudio.QualityTools.WebTestFramework.xml
+C:\Performance_Training\Custom_Parameter\Plugin2\obj\Debug\Plugin2.dll
+C:\Performance_Training\Custom_Parameter\Plugin2\obj\Debug\Plugin2.pdb

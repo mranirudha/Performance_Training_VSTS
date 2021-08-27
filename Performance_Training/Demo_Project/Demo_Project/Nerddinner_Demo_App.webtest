@@ -1,0 +1,803 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebTest Name="Nerddinner_Demo_App" Id="c274ae3d-a759-4a1f-acc5-8c5139cfb0fa" Owner="" Priority="2147483647" Enabled="True" CssProjectStructure="" CssIteration="" Timeout="0" WorkItemIds="" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010" Description="" CredentialUserName="" CredentialPassword="" PreAuthenticate="True" Proxy="default" StopOnError="True" RecordedResultFile="WebTest1.fc81b7e2-39f2-4719-9e99-92ce1c54b385.rec.webtestresult" ResultsLocale="">
+  <Items>
+    <Comment CommentText="Landing Page" />
+    <TransactionTimer Name="TC01_01_Landing Page">
+      <Items>
+        <Request Method="GET" Guid="56178cd3-bd28-4b14-b231-d3a9c1382422" Version="1.1" Url="http://nerddinner.com/" ThinkTime="3" Timeout="300" ParseDependentRequests="False" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <CorrelationExtractionRules>
+            <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam2.returnUrl" DisplayName="" Description="">
+              <RuleParameters>
+                <RuleParameter Name="StartsWith" Value="?returnUrl=" />
+                <RuleParameter Name="EndsWith" Value="&quot;" />
+                <RuleParameter Name="Index" Value="0" />
+                <RuleParameter Name="IgnoreCase" Value="False" />
+                <RuleParameter Name="UseRegularExpression" Value="False" />
+                <RuleParameter Name="HtmlDecode" Value="True" />
+                <RuleParameter Name="Required" Value="False" />
+              </RuleParameters>
+            </ExtractionRule>
+          </CorrelationExtractionRules>
+        </Request>
+        <Request Method="GET" Guid="4cf8f718-9e4b-426f-aa51-e516e7d6b383" Version="1.1" Url="http://dev.virtualearth.net/webservices/v1/LoggingService/LoggingService.svc/Log" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://nerddinner.com/" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="entry" Value="0" RecordedValue="0" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="fmt" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="type" Value="3" RecordedValue="3" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="group" Value="MapControl" RecordedValue="MapControl" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="name" Value="AJAX" RecordedValue="AJAX" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="version" Value="6.3.20091207154938.04" RecordedValue="6.3.20091207154938.04" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="session" Value="1499767841986" RecordedValue="1499767841986" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="mkt" Value="en-us" RecordedValue="en-us" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="auth" Value="Ak280HLmROTyGC6_JYfrOcMOI2ir10pS5MQ4sTjnKH3Irvlm-UPwfT5y74AhzhO7" RecordedValue="Ak280HLmROTyGC6_JYfrOcMOI2ir10pS5MQ4sTjnKH3Irvlm-UPwfT5y74AhzhO7" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="jsonp" Value="LogCredCB1499767826037" RecordedValue="LogCredCB1499767826037" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+        <Request Method="GET" Guid="58d8dc06-ea2f-433f-a7a8-24769e04f244" Version="1.1" Url="http://nerddinner.com/mini-profiler-results" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Accept" Value="application/json, text/javascript, */*; q=0.01" />
+            <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+            <Header Name="Referer" Value="http://nerddinner.com/" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="id" Value="e79adbe7-f3ed-480d-904b-c1e5e8295cb6" RecordedValue="e79adbe7-f3ed-480d-904b-c1e5e8295cb6" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="popup" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+        <Request Method="POST" Guid="a182c652-6bb8-4951-80ce-1dbacc1cfdd7" Version="1.1" Url="http://nerddinner.com/Search/GetMostPopularDinners" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Accept" Value="application/json, text/javascript, */*; q=0.01" />
+            <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+            <Header Name="Referer" Value="http://nerddinner.com/" />
+          </Headers>
+          <FormPostHttpBody>
+            <FormPostParameter Name="limit" Value="8" RecordedValue="8" CorrelationBinding="" UrlEncode="True" />
+          </FormPostHttpBody>
+        </Request>
+        <Request Method="GET" Guid="6c75908b-8fe1-4ce2-a57b-76ded2a2c6b0" Version="1.1" Url="http://nerddinner.com/mini-profiler-results" ThinkTime="3" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Accept" Value="application/json, text/javascript, */*; q=0.01" />
+            <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+            <Header Name="Referer" Value="http://nerddinner.com/" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="id" Value="97b59995-0266-47e0-94c9-a53c2153b5e6" RecordedValue="97b59995-0266-47e0-94c9-a53c2153b5e6" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="popup" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+        <Request Method="GET" Guid="20848593-bb9c-4164-a53d-8efdad7f48ea" Version="1.1" Url="http://feedback.nerddinner.com/forums/general/widgets/popin.html" ThinkTime="1" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://nerddinner.com/" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="lang" Value="en" RecordedValue="en" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+        <Request Method="GET" Guid="6226f0fb-bd96-4821-8ab9-9bddde02b3e8" Version="1.1" Url="http://ecn.dev.virtualearth.net/mapcontrol/v6.3/cursors/grab.cur" ThinkTime="15" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://nerddinner.com/" />
+          </Headers>
+        </Request>
+      </Items>
+    </TransactionTimer>
+    <Comment CommentText="Login" />
+    <TransactionTimer Name="TC01_02_Login Page">
+      <Items>
+        <Request Method="GET" Guid="01263ace-8e25-4ad7-bc29-b1bd99f32918" Version="1.1" Url="http://nerddinner.com/Account/LogOn" ThinkTime="5" Timeout="300" ParseDependentRequests="False" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <DependentRequests>
+            <Request Method="POST" Guid="0a00e610-7014-4a2e-a42a-bdcbf30a116e" Version="1.1" Url="http://nerddinner.com/mini-profiler-results" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+              <Headers>
+                <Header Name="Content-Type" Value="application/x-www-form-urlencoded" />
+                <Header Name="Accept" Value="application/json, text/javascript, */*; q=0.01" />
+                <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+                <Header Name="Referer" Value="http://nerddinner.com/Account/LogOn?returnUrl=%2F" />
+              </Headers>
+              <QueryStringParameters>
+                <QueryStringParameter Name="id" Value="aed75da9-b5d2-4d8c-972b-62e0ca78e325" RecordedValue="aed75da9-b5d2-4d8c-972b-62e0ca78e325" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+                <QueryStringParameter Name="popup" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+              </QueryStringParameters>
+              <FormPostHttpBody />
+            </Request>
+            <Request Method="POST" Guid="9d82532d-78cf-4801-bd68-aa4cadcbcd4e" Version="1.1" Url="http://nerddinner.com/Auth/Discover" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+              <Headers>
+                <Header Name="Content-Type" Value="application/x-www-form-urlencoded" />
+                <Header Name="Accept" Value="text/plain, */*; q=0.01" />
+                <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+                <Header Name="Referer" Value="http://nerddinner.com/Account/LogOn?returnUrl=%2F" />
+              </Headers>
+              <CorrelationExtractionRules>
+                <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam144.openid.claimed_id" DisplayName="" Description="">
+                  <RuleParameters>
+                    <RuleParameter Name="StartsWith" Value="?openid.claimed_id=" />
+                    <RuleParameter Name="EndsWith" Value="&amp;" />
+                    <RuleParameter Name="Index" Value="0" />
+                    <RuleParameter Name="IgnoreCase" Value="False" />
+                    <RuleParameter Name="UseRegularExpression" Value="False" />
+                    <RuleParameter Name="HtmlDecode" Value="True" />
+                    <RuleParameter Name="Required" Value="False" />
+                  </RuleParameters>
+                </ExtractionRule>
+                <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam145.openid.identity" DisplayName="" Description="">
+                  <RuleParameters>
+                    <RuleParameter Name="StartsWith" Value="&amp;openid.identity=" />
+                    <RuleParameter Name="EndsWith" Value="&amp;" />
+                    <RuleParameter Name="Index" Value="0" />
+                    <RuleParameter Name="IgnoreCase" Value="False" />
+                    <RuleParameter Name="UseRegularExpression" Value="False" />
+                    <RuleParameter Name="HtmlDecode" Value="True" />
+                    <RuleParameter Name="Required" Value="False" />
+                  </RuleParameters>
+                </ExtractionRule>
+                <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam146.openid.assoc_handle" DisplayName="" Description="">
+                  <RuleParameters>
+                    <RuleParameter Name="StartsWith" Value="&amp;openid.assoc_handle=" />
+                    <RuleParameter Name="EndsWith" Value="&amp;" />
+                    <RuleParameter Name="Index" Value="0" />
+                    <RuleParameter Name="IgnoreCase" Value="False" />
+                    <RuleParameter Name="UseRegularExpression" Value="False" />
+                    <RuleParameter Name="HtmlDecode" Value="True" />
+                    <RuleParameter Name="Required" Value="False" />
+                  </RuleParameters>
+                </ExtractionRule>
+                <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam147.openid.return_to" DisplayName="" Description="">
+                  <RuleParameters>
+                    <RuleParameter Name="StartsWith" Value="&amp;openid.return_to=" />
+                    <RuleParameter Name="EndsWith" Value="&amp;" />
+                    <RuleParameter Name="Index" Value="0" />
+                    <RuleParameter Name="IgnoreCase" Value="False" />
+                    <RuleParameter Name="UseRegularExpression" Value="False" />
+                    <RuleParameter Name="HtmlDecode" Value="True" />
+                    <RuleParameter Name="Required" Value="False" />
+                  </RuleParameters>
+                </ExtractionRule>
+                <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam148.openid.realm" DisplayName="" Description="">
+                  <RuleParameters>
+                    <RuleParameter Name="StartsWith" Value="&amp;openid.realm=" />
+                    <RuleParameter Name="EndsWith" Value="&amp;" />
+                    <RuleParameter Name="Index" Value="0" />
+                    <RuleParameter Name="IgnoreCase" Value="False" />
+                    <RuleParameter Name="UseRegularExpression" Value="False" />
+                    <RuleParameter Name="HtmlDecode" Value="True" />
+                    <RuleParameter Name="Required" Value="False" />
+                  </RuleParameters>
+                </ExtractionRule>
+                <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam149.openid.mode" DisplayName="" Description="">
+                  <RuleParameters>
+                    <RuleParameter Name="StartsWith" Value="&amp;openid.mode=" />
+                    <RuleParameter Name="EndsWith" Value="&amp;" />
+                    <RuleParameter Name="Index" Value="0" />
+                    <RuleParameter Name="IgnoreCase" Value="False" />
+                    <RuleParameter Name="UseRegularExpression" Value="False" />
+                    <RuleParameter Name="HtmlDecode" Value="True" />
+                    <RuleParameter Name="Required" Value="False" />
+                  </RuleParameters>
+                </ExtractionRule>
+                <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam150.openid.ns" DisplayName="" Description="">
+                  <RuleParameters>
+                    <RuleParameter Name="StartsWith" Value="&amp;openid.ns=" />
+                    <RuleParameter Name="EndsWith" Value="&amp;" />
+                    <RuleParameter Name="Index" Value="0" />
+                    <RuleParameter Name="IgnoreCase" Value="False" />
+                    <RuleParameter Name="UseRegularExpression" Value="False" />
+                    <RuleParameter Name="HtmlDecode" Value="True" />
+                    <RuleParameter Name="Required" Value="False" />
+                  </RuleParameters>
+                </ExtractionRule>
+                <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam151.openid.ns.alias3" DisplayName="" Description="">
+                  <RuleParameters>
+                    <RuleParameter Name="StartsWith" Value="&amp;openid.ns.alias3=" />
+                    <RuleParameter Name="EndsWith" Value="&amp;" />
+                    <RuleParameter Name="Index" Value="0" />
+                    <RuleParameter Name="IgnoreCase" Value="False" />
+                    <RuleParameter Name="UseRegularExpression" Value="False" />
+                    <RuleParameter Name="HtmlDecode" Value="True" />
+                    <RuleParameter Name="Required" Value="False" />
+                  </RuleParameters>
+                </ExtractionRule>
+                <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam152.openid.alias3.lang" DisplayName="" Description="">
+                  <RuleParameters>
+                    <RuleParameter Name="StartsWith" Value="&amp;openid.alias3.lang=" />
+                    <RuleParameter Name="EndsWith" Value="&amp;" />
+                    <RuleParameter Name="Index" Value="0" />
+                    <RuleParameter Name="IgnoreCase" Value="False" />
+                    <RuleParameter Name="UseRegularExpression" Value="False" />
+                    <RuleParameter Name="HtmlDecode" Value="True" />
+                    <RuleParameter Name="Required" Value="False" />
+                  </RuleParameters>
+                </ExtractionRule>
+                <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam153.openid.alias3.mode" DisplayName="" Description="">
+                  <RuleParameters>
+                    <RuleParameter Name="StartsWith" Value="&amp;openid.alias3.mode=" />
+                    <RuleParameter Name="EndsWith" Value="&amp;" />
+                    <RuleParameter Name="Index" Value="0" />
+                    <RuleParameter Name="IgnoreCase" Value="False" />
+                    <RuleParameter Name="UseRegularExpression" Value="False" />
+                    <RuleParameter Name="HtmlDecode" Value="True" />
+                    <RuleParameter Name="Required" Value="False" />
+                  </RuleParameters>
+                </ExtractionRule>
+                <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam154.openid.ns.sreg" DisplayName="" Description="">
+                  <RuleParameters>
+                    <RuleParameter Name="StartsWith" Value="&amp;openid.ns.sreg=" />
+                    <RuleParameter Name="EndsWith" Value="&amp;" />
+                    <RuleParameter Name="Index" Value="0" />
+                    <RuleParameter Name="IgnoreCase" Value="False" />
+                    <RuleParameter Name="UseRegularExpression" Value="False" />
+                    <RuleParameter Name="HtmlDecode" Value="True" />
+                    <RuleParameter Name="Required" Value="False" />
+                  </RuleParameters>
+                </ExtractionRule>
+                <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam155.openid.sreg.policy_url" DisplayName="" Description="">
+                  <RuleParameters>
+                    <RuleParameter Name="StartsWith" Value="&amp;openid.sreg.policy_url=" />
+                    <RuleParameter Name="EndsWith" Value="&amp;" />
+                    <RuleParameter Name="Index" Value="0" />
+                    <RuleParameter Name="IgnoreCase" Value="False" />
+                    <RuleParameter Name="UseRegularExpression" Value="False" />
+                    <RuleParameter Name="HtmlDecode" Value="True" />
+                    <RuleParameter Name="Required" Value="False" />
+                  </RuleParameters>
+                </ExtractionRule>
+                <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam156.openid.sreg.required" DisplayName="" Description="">
+                  <RuleParameters>
+                    <RuleParameter Name="StartsWith" Value="&amp;openid.sreg.required=" />
+                    <RuleParameter Name="EndsWith" Value="&amp;" />
+                    <RuleParameter Name="Index" Value="0" />
+                    <RuleParameter Name="IgnoreCase" Value="False" />
+                    <RuleParameter Name="UseRegularExpression" Value="False" />
+                    <RuleParameter Name="HtmlDecode" Value="True" />
+                    <RuleParameter Name="Required" Value="False" />
+                  </RuleParameters>
+                </ExtractionRule>
+                <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam157.openid.sreg.optional" DisplayName="" Description="">
+                  <RuleParameters>
+                    <RuleParameter Name="StartsWith" Value="&amp;openid.sreg.optional=" />
+                    <RuleParameter Name="EndsWith" Value="&amp;" />
+                    <RuleParameter Name="Index" Value="0" />
+                    <RuleParameter Name="IgnoreCase" Value="False" />
+                    <RuleParameter Name="UseRegularExpression" Value="False" />
+                    <RuleParameter Name="HtmlDecode" Value="True" />
+                    <RuleParameter Name="Required" Value="False" />
+                  </RuleParameters>
+                </ExtractionRule>
+                <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam158.openid.ns.alias4" DisplayName="" Description="">
+                  <RuleParameters>
+                    <RuleParameter Name="StartsWith" Value="&amp;openid.ns.alias4=" />
+                    <RuleParameter Name="EndsWith" Value="&amp;" />
+                    <RuleParameter Name="Index" Value="0" />
+                    <RuleParameter Name="IgnoreCase" Value="False" />
+                    <RuleParameter Name="UseRegularExpression" Value="False" />
+                    <RuleParameter Name="HtmlDecode" Value="True" />
+                    <RuleParameter Name="Required" Value="False" />
+                  </RuleParameters>
+                </ExtractionRule>
+                <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam159.openid.alias4.if_available" DisplayName="" Description="">
+                  <RuleParameters>
+                    <RuleParameter Name="StartsWith" Value="&amp;openid.alias4.if_available=" />
+                    <RuleParameter Name="EndsWith" Value="&amp;" />
+                    <RuleParameter Name="Index" Value="0" />
+                    <RuleParameter Name="IgnoreCase" Value="False" />
+                    <RuleParameter Name="UseRegularExpression" Value="False" />
+                    <RuleParameter Name="HtmlDecode" Value="True" />
+                    <RuleParameter Name="Required" Value="False" />
+                  </RuleParameters>
+                </ExtractionRule>
+                <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam160.openid.alias4.required" DisplayName="" Description="">
+                  <RuleParameters>
+                    <RuleParameter Name="StartsWith" Value="&amp;openid.alias4.required=" />
+                    <RuleParameter Name="EndsWith" Value="&amp;" />
+                    <RuleParameter Name="Index" Value="0" />
+                    <RuleParameter Name="IgnoreCase" Value="False" />
+                    <RuleParameter Name="UseRegularExpression" Value="False" />
+                    <RuleParameter Name="HtmlDecode" Value="True" />
+                    <RuleParameter Name="Required" Value="False" />
+                  </RuleParameters>
+                </ExtractionRule>
+                <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam161.openid.alias4.mode" DisplayName="" Description="">
+                  <RuleParameters>
+                    <RuleParameter Name="StartsWith" Value="&amp;openid.alias4.mode=" />
+                    <RuleParameter Name="EndsWith" Value="&amp;" />
+                    <RuleParameter Name="Index" Value="0" />
+                    <RuleParameter Name="IgnoreCase" Value="False" />
+                    <RuleParameter Name="UseRegularExpression" Value="False" />
+                    <RuleParameter Name="HtmlDecode" Value="True" />
+                    <RuleParameter Name="Required" Value="False" />
+                  </RuleParameters>
+                </ExtractionRule>
+                <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam162.openid.alias4.type.alias1" DisplayName="" Description="">
+                  <RuleParameters>
+                    <RuleParameter Name="StartsWith" Value="&amp;openid.alias4.type.alias1=" />
+                    <RuleParameter Name="EndsWith" Value="&amp;" />
+                    <RuleParameter Name="Index" Value="0" />
+                    <RuleParameter Name="IgnoreCase" Value="False" />
+                    <RuleParameter Name="UseRegularExpression" Value="False" />
+                    <RuleParameter Name="HtmlDecode" Value="True" />
+                    <RuleParameter Name="Required" Value="False" />
+                  </RuleParameters>
+                </ExtractionRule>
+                <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam163.openid.alias4.count.alias1" DisplayName="" Description="">
+                  <RuleParameters>
+                    <RuleParameter Name="StartsWith" Value="&amp;openid.alias4.count.alias1=" />
+                    <RuleParameter Name="EndsWith" Value="&amp;" />
+                    <RuleParameter Name="Index" Value="0" />
+                    <RuleParameter Name="IgnoreCase" Value="False" />
+                    <RuleParameter Name="UseRegularExpression" Value="False" />
+                    <RuleParameter Name="HtmlDecode" Value="True" />
+                    <RuleParameter Name="Required" Value="False" />
+                  </RuleParameters>
+                </ExtractionRule>
+                <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam164.openid.alias4.type.alias2" DisplayName="" Description="">
+                  <RuleParameters>
+                    <RuleParameter Name="StartsWith" Value="&amp;openid.alias4.type.alias2=" />
+                    <RuleParameter Name="EndsWith" Value="&amp;" />
+                    <RuleParameter Name="Index" Value="0" />
+                    <RuleParameter Name="IgnoreCase" Value="False" />
+                    <RuleParameter Name="UseRegularExpression" Value="False" />
+                    <RuleParameter Name="HtmlDecode" Value="True" />
+                    <RuleParameter Name="Required" Value="False" />
+                  </RuleParameters>
+                </ExtractionRule>
+                <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam165.openid.alias4.count.alias2" DisplayName="" Description="">
+                  <RuleParameters>
+                    <RuleParameter Name="StartsWith" Value="&amp;openid.alias4.count.alias2=" />
+                    <RuleParameter Name="EndsWith" Value="&amp;" />
+                    <RuleParameter Name="Index" Value="0" />
+                    <RuleParameter Name="IgnoreCase" Value="False" />
+                    <RuleParameter Name="UseRegularExpression" Value="False" />
+                    <RuleParameter Name="HtmlDecode" Value="True" />
+                    <RuleParameter Name="Required" Value="False" />
+                  </RuleParameters>
+                </ExtractionRule>
+                <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam166.openid.alias4.type.alias3" DisplayName="" Description="">
+                  <RuleParameters>
+                    <RuleParameter Name="StartsWith" Value="&amp;openid.alias4.type.alias3=" />
+                    <RuleParameter Name="EndsWith" Value="&amp;" />
+                    <RuleParameter Name="Index" Value="0" />
+                    <RuleParameter Name="IgnoreCase" Value="False" />
+                    <RuleParameter Name="UseRegularExpression" Value="False" />
+                    <RuleParameter Name="HtmlDecode" Value="True" />
+                    <RuleParameter Name="Required" Value="False" />
+                  </RuleParameters>
+                </ExtractionRule>
+                <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam167.openid.alias4.count.alias3" DisplayName="" Description="">
+                  <RuleParameters>
+                    <RuleParameter Name="StartsWith" Value="&amp;openid.alias4.count.alias3=" />
+                    <RuleParameter Name="EndsWith" Value="&amp;" />
+                    <RuleParameter Name="Index" Value="0" />
+                    <RuleParameter Name="IgnoreCase" Value="False" />
+                    <RuleParameter Name="UseRegularExpression" Value="False" />
+                    <RuleParameter Name="HtmlDecode" Value="True" />
+                    <RuleParameter Name="Required" Value="False" />
+                  </RuleParameters>
+                </ExtractionRule>
+                <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam168.openid.alias4.type.alias4" DisplayName="" Description="">
+                  <RuleParameters>
+                    <RuleParameter Name="StartsWith" Value="&amp;openid.alias4.type.alias4=" />
+                    <RuleParameter Name="EndsWith" Value="&amp;" />
+                    <RuleParameter Name="Index" Value="0" />
+                    <RuleParameter Name="IgnoreCase" Value="False" />
+                    <RuleParameter Name="UseRegularExpression" Value="False" />
+                    <RuleParameter Name="HtmlDecode" Value="True" />
+                    <RuleParameter Name="Required" Value="False" />
+                  </RuleParameters>
+                </ExtractionRule>
+                <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam169.openid.alias4.count.alias4" DisplayName="" Description="">
+                  <RuleParameters>
+                    <RuleParameter Name="StartsWith" Value="&amp;openid.alias4.count.alias4=" />
+                    <RuleParameter Name="EndsWith" Value="&quot;" />
+                    <RuleParameter Name="Index" Value="0" />
+                    <RuleParameter Name="IgnoreCase" Value="False" />
+                    <RuleParameter Name="UseRegularExpression" Value="False" />
+                    <RuleParameter Name="HtmlDecode" Value="True" />
+                    <RuleParameter Name="Required" Value="False" />
+                  </RuleParameters>
+                </ExtractionRule>
+              </CorrelationExtractionRules>
+              <QueryStringParameters>
+                <QueryStringParameter Name="identifier" Value="https%3A%2F%2Fme.yahoo.com%2F" RecordedValue="https%3A%2F%2Fme.yahoo.com%2F" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+              </QueryStringParameters>
+              <FormPostHttpBody />
+            </Request>
+            <Request Method="POST" Guid="06d3dd0b-e795-487e-a3bf-f912f4867197" Version="1.1" Url="http://nerddinner.com/Auth/Discover" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+              <Headers>
+                <Header Name="Content-Type" Value="application/x-www-form-urlencoded" />
+                <Header Name="Accept" Value="text/plain, */*; q=0.01" />
+                <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+                <Header Name="Referer" Value="http://nerddinner.com/Account/LogOn?returnUrl=%2F" />
+              </Headers>
+              <QueryStringParameters>
+                <QueryStringParameter Name="identifier" Value="https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid" RecordedValue="https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+              </QueryStringParameters>
+              <FormPostHttpBody />
+            </Request>
+          </DependentRequests>
+          <Headers>
+            <Header Name="Referer" Value="http://nerddinner.com/" />
+          </Headers>
+          <ExtractionRules>
+            <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractHiddenFields, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="1" DisplayName="Extract Hidden Fields" Description="Extract all hidden fields from the response and place them into the test context.">
+              <RuleParameters>
+                <RuleParameter Name="Required" Value="True" />
+                <RuleParameter Name="HtmlDecode" Value="True" />
+              </RuleParameters>
+            </ExtractionRule>
+          </ExtractionRules>
+          <CorrelationExtractionRules>
+            <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam1.returnUrl" DisplayName="" Description="">
+              <RuleParameters>
+                <RuleParameter Name="StartsWith" Value="?returnUrl=" />
+                <RuleParameter Name="EndsWith" Value="A" />
+                <RuleParameter Name="Index" Value="0" />
+                <RuleParameter Name="IgnoreCase" Value="False" />
+                <RuleParameter Name="UseRegularExpression" Value="False" />
+                <RuleParameter Name="HtmlDecode" Value="True" />
+                <RuleParameter Name="Required" Value="False" />
+              </RuleParameters>
+            </ExtractionRule>
+            <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam1.Password" DisplayName="" Description="">
+              <RuleParameters>
+                <RuleParameter Name="StartsWith" Value="ype=&quot;" />
+                <RuleParameter Name="EndsWith" Value="&quot; /&gt;&#xD;" />
+                <RuleParameter Name="Index" Value="30" />
+                <RuleParameter Name="IgnoreCase" Value="False" />
+                <RuleParameter Name="UseRegularExpression" Value="False" />
+                <RuleParameter Name="HtmlDecode" Value="True" />
+                <RuleParameter Name="Required" Value="False" />
+              </RuleParameters>
+            </ExtractionRule>
+          </CorrelationExtractionRules>
+          <QueryStringParameters>
+            <QueryStringParameter Name="returnUrl" Value="%2F" RecordedValue="%2F" CorrelationBinding="{{QueryStringParam2.returnUrl}}" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+        <Request Method="GET" Guid="98d5985c-e468-4429-a19d-796acfe2e4c1" Version="1.1" Url="http://yui.yahooapis.com/combo" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://nerddinner.com/Account/LogOn?returnUrl=%2F" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="" Value="2.8.0r4/build/menu/assets/skins/sam/menu.css" RecordedValue="2.8.0r4/build/menu/assets/skins/sam/menu.css" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="" Value="2.8.0r4/build/button/assets/skins/sam/button.css" RecordedValue="2.8.0r4/build/button/assets/skins/sam/button.css" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+        <Request Method="GET" Guid="1ad09015-0049-497b-a28f-3bcd1ac59a38" Version="1.1" Url="http://yui.yahooapis.com/combo" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://nerddinner.com/Account/LogOn?returnUrl=%2F" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="" Value="2.8.0r4/build/yahoo-dom-event/yahoo-dom-event.js" RecordedValue="2.8.0r4/build/yahoo-dom-event/yahoo-dom-event.js" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="" Value="2.8.0r4/build/container/container_core-min.js" RecordedValue="2.8.0r4/build/container/container_core-min.js" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="" Value="2.8.0r4/build/menu/menu-min.js" RecordedValue="2.8.0r4/build/menu/menu-min.js" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="" Value="2.8.0r4/build/element/element-min.js" RecordedValue="2.8.0r4/build/element/element-min.js" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="" Value="2.8.0r4/build/button/button-min.js" RecordedValue="2.8.0r4/build/button/button-min.js" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+        <Request Method="GET" Guid="cab7457c-0ac2-4a61-b07a-78b09091821b" Version="1.1" Url="https://open.login.yahooapis.com/openid/op/auth" ThinkTime="0" Timeout="300" ParseDependentRequests="False" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="http://nerddinner.com/Dinners/Trouble?aspxerrorpath=/Rejected-By-UrlScan" ReportingName="" IgnoreHttpStatusCode="False">
+          <DependentRequests>
+            <Request Method="GET" Guid="76d934d2-a60c-4a08-90a2-7a789249bace" Version="1.1" Url="http://nerddinner.com/mini-profiler-results" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+              <Headers>
+                <Header Name="Accept" Value="application/json, text/javascript, */*; q=0.01" />
+                <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+                <Header Name="Referer" Value="http://nerddinner.com/Dinners/Trouble?aspxerrorpath=/Rejected-By-UrlScan" />
+              </Headers>
+              <QueryStringParameters>
+                <QueryStringParameter Name="id" Value="fc37ff56-e71c-4eed-8977-53e4da0e75cd" RecordedValue="fc37ff56-e71c-4eed-8977-53e4da0e75cd" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+                <QueryStringParameter Name="popup" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+              </QueryStringParameters>
+            </Request>
+            <Request Method="GET" Guid="dac01277-dc97-483c-908d-97257a9c8fe0" Version="1.1" Url="http://nerddinner.com/mini-profiler-results" ThinkTime="0" Timeout="300" ParseDependentRequests="False" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+              <Headers>
+                <Header Name="Accept" Value="application/json, text/javascript, */*; q=0.01" />
+                <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+                <Header Name="Referer" Value="http://nerddinner.com/Dinners/Trouble?aspxerrorpath=/Rejected-By-UrlScan" />
+              </Headers>
+              <QueryStringParameters>
+                <QueryStringParameter Name="id" Value="4bc948ea-6613-4867-a613-dae2ff38be5e" RecordedValue="4bc948ea-6613-4867-a613-dae2ff38be5e" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+                <QueryStringParameter Name="popup" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+              </QueryStringParameters>
+            </Request>
+            <Request Method="GET" Guid="9327cb73-b7b4-4209-98e5-076f2c56fa54" Version="1.1" Url="http://nerddinner.com/mini-profiler-results" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+              <Headers>
+                <Header Name="Accept" Value="application/json, text/javascript, */*; q=0.01" />
+                <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+                <Header Name="Referer" Value="http://nerddinner.com/Dinners/Trouble?aspxerrorpath=/Rejected-By-UrlScan" />
+              </Headers>
+              <QueryStringParameters>
+                <QueryStringParameter Name="id" Value="a57c35f6-5cba-4738-968a-3a338ed97060" RecordedValue="a57c35f6-5cba-4738-968a-3a338ed97060" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+                <QueryStringParameter Name="popup" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+              </QueryStringParameters>
+            </Request>
+            <Request Method="GET" Guid="fed6c0c2-fe4b-4ad4-b7fb-859aa3954b3b" Version="1.1" Url="http://nerddinner.com/mini-profiler-results" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+              <Headers>
+                <Header Name="Accept" Value="application/json, text/javascript, */*; q=0.01" />
+                <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+                <Header Name="Referer" Value="http://nerddinner.com/Dinners/Trouble?aspxerrorpath=/Rejected-By-UrlScan" />
+              </Headers>
+              <QueryStringParameters>
+                <QueryStringParameter Name="id" Value="94c3ae91-48d8-4652-8912-e77a05396253" RecordedValue="94c3ae91-48d8-4652-8912-e77a05396253" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+                <QueryStringParameter Name="popup" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+              </QueryStringParameters>
+            </Request>
+            <Request Method="GET" Guid="8965f6d6-824c-4873-bcc4-5cdc82e78a0d" Version="1.1" Url="http://nerddinner.com/mini-profiler-results" ThinkTime="11" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+              <Headers>
+                <Header Name="Accept" Value="application/json, text/javascript, */*; q=0.01" />
+                <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+                <Header Name="Referer" Value="http://nerddinner.com/Dinners/Trouble?aspxerrorpath=/Rejected-By-UrlScan" />
+              </Headers>
+              <QueryStringParameters>
+                <QueryStringParameter Name="id" Value="a863ad83-8f3a-4a06-a910-1f7d3040f9c6" RecordedValue="a863ad83-8f3a-4a06-a910-1f7d3040f9c6" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+                <QueryStringParameter Name="popup" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+              </QueryStringParameters>
+            </Request>
+          </DependentRequests>
+          <QueryStringParameters>
+            <QueryStringParameter Name="openid.claimed_id" Value="http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select" RecordedValue="http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select" CorrelationBinding="{{QueryStringParam144.openid.claimed_id}}" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="openid.identity" Value="http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select" RecordedValue="http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select" CorrelationBinding="{{QueryStringParam145.openid.identity}}" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="openid.assoc_handle" Value="afk4i9H.V8zv1c5nvBH7ady2LTq7vG2RQJrJRQ0Rne7neXcL2XirLA59X1NFVRgwjTgS43hWXeIn9x5lhzFGOb9BLwy2tumUBG.dsZV9X36JaNv0bH2rAmksJnjYEUZpIujK260YEbLl" RecordedValue="afk4i9H.V8zv1c5nvBH7ady2LTq7vG2RQJrJRQ0Rne7neXcL2XirLA59X1NFVRgwjTgS43hWXeIn9x5lhzFGOb9BLwy2tumUBG.dsZV9X36JaNv0bH2rAmksJnjYEUZpIujK260YEbLl" CorrelationBinding="{{QueryStringParam146.openid.assoc_handle}}" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="openid.return_to" Value="http%3A%2F%2Fnerddinner.com%2FAuth%2FPopUpReturnTo%3Fdnoa.uipopup%3D1%26dnoa.popupUISupported%3D1%26index%3D0%26dnoa.userSuppliedIdentifier%3Dhttps%253A%252F%252Fme.yahoo.com%252F%26dnoa.op_endpoint%3Dhttps%253A%252F%252Fopen.login.yahooapis.com%252Fopenid%252Fop%252Fauth%26dnoa.claimed_id%3D" RecordedValue="http%3A%2F%2Fnerddinner.com%2FAuth%2FPopUpReturnTo%3Fdnoa.uipopup%3D1%26dnoa.popupUISupported%3D1%26index%3D0%26dnoa.userSuppliedIdentifier%3Dhttps%253A%252F%252Fme.yahoo.com%252F%26dnoa.op_endpoint%3Dhttps%253A%252F%252Fopen.login.yahooapis.com%252Fopenid%252Fop%252Fauth%26dnoa.claimed_id%3D" CorrelationBinding="{{QueryStringParam147.openid.return_to}}" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="openid.realm" Value="http%3A%2F%2Fnerddinner.com%2F" RecordedValue="http%3A%2F%2Fnerddinner.com%2F" CorrelationBinding="{{QueryStringParam148.openid.realm}}" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="openid.mode" Value="checkid_immediate" RecordedValue="checkid_immediate" CorrelationBinding="{{QueryStringParam149.openid.mode}}" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="openid.ns" Value="http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0" RecordedValue="http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0" CorrelationBinding="{{QueryStringParam150.openid.ns}}" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="openid.ns.alias3" Value="http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fui%2F1.0" RecordedValue="http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fui%2F1.0" CorrelationBinding="{{QueryStringParam151.openid.ns.alias3}}" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="openid.alias3.lang" Value="en-US" RecordedValue="en-US" CorrelationBinding="{{QueryStringParam152.openid.alias3.lang}}" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="openid.alias3.mode" Value="popup" RecordedValue="popup" CorrelationBinding="{{QueryStringParam153.openid.alias3.mode}}" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="openid.ns.sreg" Value="http%3A%2F%2Fopenid.net%2Fextensions%2Fsreg%2F1.1" RecordedValue="http%3A%2F%2Fopenid.net%2Fextensions%2Fsreg%2F1.1" CorrelationBinding="{{QueryStringParam154.openid.ns.sreg}}" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="openid.sreg.policy_url" Value="http%3A%2F%2Fnerddinner.com%2FHome%2FPrivacyPolicy" RecordedValue="http%3A%2F%2Fnerddinner.com%2FHome%2FPrivacyPolicy" CorrelationBinding="{{QueryStringParam155.openid.sreg.policy_url}}" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="openid.sreg.required" Value="email" RecordedValue="email" CorrelationBinding="{{QueryStringParam156.openid.sreg.required}}" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="openid.sreg.optional" Value="fullname" RecordedValue="fullname" CorrelationBinding="{{QueryStringParam157.openid.sreg.optional}}" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="openid.ns.alias4" Value="http%3A%2F%2Fopenid.net%2Fsrv%2Fax%2F1.0" RecordedValue="http%3A%2F%2Fopenid.net%2Fsrv%2Fax%2F1.0" CorrelationBinding="{{QueryStringParam158.openid.ns.alias4}}" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="openid.alias4.if_available" Value="alias2%2Calias4" RecordedValue="alias2%2Calias4" CorrelationBinding="{{QueryStringParam159.openid.alias4.if_available}}" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="openid.alias4.required" Value="alias1%2Calias3" RecordedValue="alias1%2Calias3" CorrelationBinding="{{QueryStringParam160.openid.alias4.required}}" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="openid.alias4.mode" Value="fetch_request" RecordedValue="fetch_request" CorrelationBinding="{{QueryStringParam161.openid.alias4.mode}}" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="openid.alias4.type.alias1" Value="http%3A%2F%2Faxschema.org%2Fcontact%2Femail" RecordedValue="http%3A%2F%2Faxschema.org%2Fcontact%2Femail" CorrelationBinding="{{QueryStringParam162.openid.alias4.type.alias1}}" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="openid.alias4.count.alias1" Value="1" RecordedValue="1" CorrelationBinding="{{QueryStringParam163.openid.alias4.count.alias1}}" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="openid.alias4.type.alias2" Value="http%3A%2F%2Faxschema.org%2FnamePerson" RecordedValue="http%3A%2F%2Faxschema.org%2FnamePerson" CorrelationBinding="{{QueryStringParam164.openid.alias4.type.alias2}}" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="openid.alias4.count.alias2" Value="1" RecordedValue="1" CorrelationBinding="{{QueryStringParam165.openid.alias4.count.alias2}}" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="openid.alias4.type.alias3" Value="http%3A%2F%2Fschema.openid.net%2Fcontact%2Femail" RecordedValue="http%3A%2F%2Fschema.openid.net%2Fcontact%2Femail" CorrelationBinding="{{QueryStringParam166.openid.alias4.type.alias3}}" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="openid.alias4.count.alias3" Value="1" RecordedValue="1" CorrelationBinding="{{QueryStringParam167.openid.alias4.count.alias3}}" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="openid.alias4.type.alias4" Value="http%3A%2F%2Fschema.openid.net%2FnamePerson" RecordedValue="http%3A%2F%2Fschema.openid.net%2FnamePerson" CorrelationBinding="{{QueryStringParam168.openid.alias4.type.alias4}}" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="openid.alias4.count.alias4" Value="1" RecordedValue="1" CorrelationBinding="{{QueryStringParam169.openid.alias4.count.alias4}}" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+        <Request Method="GET" Guid="0cc1cabd-7cc4-4f25-95f3-b7dee93a7f92" Version="1.1" Url="http://nerddinner.com/Dinners/Trouble" ThinkTime="0" Timeout="300" ParseDependentRequests="False" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://nerddinner.com/Account/LogOn?returnUrl=%2F" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="aspxerrorpath" Value="/Rejected-By-UrlScan" RecordedValue="/Rejected-By-UrlScan" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+      </Items>
+    </TransactionTimer>
+    <Comment CommentText="Credentials" />
+    <TransactionTimer Name="TC01_03_Credentials">
+      <Items>
+        <Request Method="POST" Guid="68ba5e1e-87f7-413b-a416-cad78a6272f7" Version="1.1" Url="http://nerddinner.com/Account/LogOn" ThinkTime="1" Timeout="300" ParseDependentRequests="False" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="http://nerddinner.com/" ReportingName="" IgnoreHttpStatusCode="False">
+          <DependentRequests>
+            <Request Method="GET" Guid="da797fe9-db33-4f22-91e2-cfca157f223e" Version="1.1" Url="http://nerddinner.com/mini-profiler-results" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+              <Headers>
+                <Header Name="Accept" Value="application/json, text/javascript, */*; q=0.01" />
+                <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+                <Header Name="Referer" Value="http://nerddinner.com/" />
+              </Headers>
+              <QueryStringParameters>
+                <QueryStringParameter Name="id" Value="d9ed9d13-72dc-4836-9118-e52da9d3966b" RecordedValue="d9ed9d13-72dc-4836-9118-e52da9d3966b" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+                <QueryStringParameter Name="popup" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+              </QueryStringParameters>
+            </Request>
+            <Request Method="GET" Guid="4455f70a-f081-437c-a561-01a876bde211" Version="1.1" Url="http://nerddinner.com/mini-profiler-results" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+              <Headers>
+                <Header Name="Accept" Value="application/json, text/javascript, */*; q=0.01" />
+                <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+                <Header Name="Referer" Value="http://nerddinner.com/" />
+              </Headers>
+              <QueryStringParameters>
+                <QueryStringParameter Name="id" Value="747d8fc6-51ae-45ab-8253-6ac221372573" RecordedValue="747d8fc6-51ae-45ab-8253-6ac221372573" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+                <QueryStringParameter Name="popup" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+              </QueryStringParameters>
+            </Request>
+            <Request Method="GET" Guid="514161c5-f276-4bd8-9abd-dd76c96642a9" Version="1.1" Url="http://nerddinner.com/mini-profiler-results" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+              <Headers>
+                <Header Name="Accept" Value="application/json, text/javascript, */*; q=0.01" />
+                <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+                <Header Name="Referer" Value="http://nerddinner.com/" />
+              </Headers>
+              <QueryStringParameters>
+                <QueryStringParameter Name="id" Value="c164d9e7-5f4c-4ff1-9403-9aee8954b3f8" RecordedValue="c164d9e7-5f4c-4ff1-9403-9aee8954b3f8" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+                <QueryStringParameter Name="popup" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+              </QueryStringParameters>
+            </Request>
+            <Request Method="GET" Guid="8a6668d7-5d74-46d6-a391-e6f67ba89ef1" Version="1.1" Url="http://nerddinner.com/mini-profiler-results" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+              <Headers>
+                <Header Name="Accept" Value="application/json, text/javascript, */*; q=0.01" />
+                <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+                <Header Name="Referer" Value="http://nerddinner.com/" />
+              </Headers>
+              <QueryStringParameters>
+                <QueryStringParameter Name="id" Value="8e80d3f9-f7a8-403b-8a3e-4502738e00da" RecordedValue="8e80d3f9-f7a8-403b-8a3e-4502738e00da" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+                <QueryStringParameter Name="popup" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+              </QueryStringParameters>
+            </Request>
+            <Request Method="GET" Guid="e50a56c6-a7ed-4257-b17c-b8fa2aaa680c" Version="1.1" Url="http://nerddinner.com/mini-profiler-results" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+              <Headers>
+                <Header Name="Accept" Value="application/json, text/javascript, */*; q=0.01" />
+                <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+                <Header Name="Referer" Value="http://nerddinner.com/" />
+              </Headers>
+              <QueryStringParameters>
+                <QueryStringParameter Name="id" Value="34db40e8-12de-4c04-b200-17596187c0bc" RecordedValue="34db40e8-12de-4c04-b200-17596187c0bc" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+                <QueryStringParameter Name="popup" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+              </QueryStringParameters>
+            </Request>
+            <Request Method="GET" Guid="bd032a33-df99-4a47-8e41-6f292bde36e7" Version="1.1" Url="http://nerddinner.com/mini-profiler-results" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+              <Headers>
+                <Header Name="Accept" Value="application/json, text/javascript, */*; q=0.01" />
+                <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+                <Header Name="Referer" Value="http://nerddinner.com/" />
+              </Headers>
+              <QueryStringParameters>
+                <QueryStringParameter Name="id" Value="de064a55-8942-45dc-837f-5f45418be806" RecordedValue="de064a55-8942-45dc-837f-5f45418be806" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+                <QueryStringParameter Name="popup" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+              </QueryStringParameters>
+            </Request>
+            <Request Method="GET" Guid="b357de41-4b15-45c3-8806-2404f352161a" Version="1.1" Url="http://nerddinner.com/mini-profiler-results" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+              <Headers>
+                <Header Name="Accept" Value="application/json, text/javascript, */*; q=0.01" />
+                <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+                <Header Name="Referer" Value="http://nerddinner.com/" />
+              </Headers>
+              <QueryStringParameters>
+                <QueryStringParameter Name="id" Value="7a155861-3043-4000-8c4e-6132db5af3ea" RecordedValue="7a155861-3043-4000-8c4e-6132db5af3ea" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+                <QueryStringParameter Name="popup" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+              </QueryStringParameters>
+            </Request>
+            <Request Method="GET" Guid="0feba5ec-54a2-4bf2-85e0-008acb300df1" Version="1.1" Url="http://dev.virtualearth.net/webservices/v1/LoggingService/LoggingService.svc/Log" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+              <Headers>
+                <Header Name="Referer" Value="http://nerddinner.com/" />
+              </Headers>
+              <QueryStringParameters>
+                <QueryStringParameter Name="entry" Value="0" RecordedValue="0" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+                <QueryStringParameter Name="fmt" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+                <QueryStringParameter Name="type" Value="3" RecordedValue="3" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+                <QueryStringParameter Name="group" Value="MapControl" RecordedValue="MapControl" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+                <QueryStringParameter Name="name" Value="AJAX" RecordedValue="AJAX" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+                <QueryStringParameter Name="version" Value="6.3.20091207154938.04" RecordedValue="6.3.20091207154938.04" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+                <QueryStringParameter Name="session" Value="1499767632575" RecordedValue="1499767632575" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+                <QueryStringParameter Name="mkt" Value="en-us" RecordedValue="en-us" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+                <QueryStringParameter Name="auth" Value="Ak280HLmROTyGC6_JYfrOcMOI2ir10pS5MQ4sTjnKH3Irvlm-UPwfT5y74AhzhO7" RecordedValue="Ak280HLmROTyGC6_JYfrOcMOI2ir10pS5MQ4sTjnKH3Irvlm-UPwfT5y74AhzhO7" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+                <QueryStringParameter Name="" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+                <QueryStringParameter Name="jsonp" Value="LogCredCB1499767781883" RecordedValue="LogCredCB1499767781883" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+                <QueryStringParameter Name="" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+              </QueryStringParameters>
+            </Request>
+            <Request Method="GET" Guid="37a41bd8-ac72-4ff2-82db-b9242f08da3a" Version="1.1" Url="http://ecn.dev.virtualearth.net/mapcontrol/v6.3/cursors/grab.cur" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+              <Headers>
+                <Header Name="Referer" Value="http://nerddinner.com/" />
+              </Headers>
+            </Request>
+            <Request Method="POST" Guid="d4164e02-5195-45dd-b088-b64c02664993" Version="1.1" Url="http://nerddinner.com/Search/GetMostPopularDinners" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+              <Headers>
+                <Header Name="Accept" Value="application/json, text/javascript, */*; q=0.01" />
+                <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+                <Header Name="Referer" Value="http://nerddinner.com/" />
+              </Headers>
+              <FormPostHttpBody>
+                <FormPostParameter Name="limit" Value="8" RecordedValue="8" CorrelationBinding="" UrlEncode="True" />
+              </FormPostHttpBody>
+            </Request>
+          </DependentRequests>
+          <Headers>
+            <Header Name="Referer" Value="http://nerddinner.com/Account/LogOn?returnUrl=%2F" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="returnUrl" Value="%2F" RecordedValue="%2F" CorrelationBinding="{{QueryStringParam1.returnUrl}}" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+          <FormPostHttpBody>
+            <FormPostParameter Name="UserName" Value="anirudha" RecordedValue="anirudha" CorrelationBinding="" UrlEncode="True" />
+            <FormPostParameter Name="Password" Value="password" RecordedValue="password" CorrelationBinding="{{FormPostParam1.Password}}" UrlEncode="True" />
+            <FormPostParameter Name="RememberMe" Value="{{$HIDDEN1.RememberMe}}" RecordedValue="false" CorrelationBinding="" UrlEncode="True" />
+          </FormPostHttpBody>
+        </Request>
+        <Request Method="GET" Guid="7b732d54-d399-4654-a342-c7e11f5f69f8" Version="1.1" Url="http://nerddinner.com/mini-profiler-results" ThinkTime="12" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Accept" Value="application/json, text/javascript, */*; q=0.01" />
+            <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+            <Header Name="Referer" Value="http://nerddinner.com/" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="id" Value="7bc02ff2-5c2e-4667-b60a-1165a67a2cb5" RecordedValue="7bc02ff2-5c2e-4667-b60a-1165a67a2cb5" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="popup" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+      </Items>
+    </TransactionTimer>
+    <Comment CommentText="Logoff" />
+    <TransactionTimer Name="TC01_04_Logoff">
+      <Items>
+        <Request Method="GET" Guid="de6f83f7-db0c-4686-82f9-718b58a5a389" Version="1.1" Url="http://nerddinner.com/Account/LogOff" ThinkTime="1" Timeout="300" ParseDependentRequests="False" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="http://nerddinner.com/" ReportingName="" IgnoreHttpStatusCode="False">
+          <DependentRequests>
+            <Request Method="GET" Guid="1401ff58-30c8-460b-b0b0-7c081d8aa545" Version="1.1" Url="http://nerddinner.com/mini-profiler-results" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+              <Headers>
+                <Header Name="Accept" Value="application/json, text/javascript, */*; q=0.01" />
+                <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+                <Header Name="Referer" Value="http://nerddinner.com/" />
+              </Headers>
+              <QueryStringParameters>
+                <QueryStringParameter Name="id" Value="98484f22-0ed4-47e5-b5d5-04ed877cfcb4" RecordedValue="98484f22-0ed4-47e5-b5d5-04ed877cfcb4" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+                <QueryStringParameter Name="popup" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+              </QueryStringParameters>
+            </Request>
+            <Request Method="GET" Guid="9e89a87a-f6ec-418a-ad53-1188ffc21455" Version="1.1" Url="http://nerddinner.com/mini-profiler-results" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+              <Headers>
+                <Header Name="Accept" Value="application/json, text/javascript, */*; q=0.01" />
+                <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+                <Header Name="Referer" Value="http://nerddinner.com/" />
+              </Headers>
+              <QueryStringParameters>
+                <QueryStringParameter Name="id" Value="391c9c78-3225-4f3f-9101-48aeddd1d3ff" RecordedValue="391c9c78-3225-4f3f-9101-48aeddd1d3ff" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+                <QueryStringParameter Name="popup" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+              </QueryStringParameters>
+            </Request>
+            <Request Method="GET" Guid="a0084eda-3a2a-42eb-9771-b4ef1972b235" Version="1.1" Url="http://dev.virtualearth.net/webservices/v1/LoggingService/LoggingService.svc/Log" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+              <Headers>
+                <Header Name="Referer" Value="http://nerddinner.com/" />
+              </Headers>
+              <QueryStringParameters>
+                <QueryStringParameter Name="entry" Value="0" RecordedValue="0" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+                <QueryStringParameter Name="fmt" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+                <QueryStringParameter Name="type" Value="3" RecordedValue="3" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+                <QueryStringParameter Name="group" Value="MapControl" RecordedValue="MapControl" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+                <QueryStringParameter Name="name" Value="AJAX" RecordedValue="AJAX" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+                <QueryStringParameter Name="version" Value="6.3.20091207154938.04" RecordedValue="6.3.20091207154938.04" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+                <QueryStringParameter Name="session" Value="1499768174654" RecordedValue="1499768174654" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+                <QueryStringParameter Name="mkt" Value="en-us" RecordedValue="en-us" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+                <QueryStringParameter Name="auth" Value="Ak280HLmROTyGC6_JYfrOcMOI2ir10pS5MQ4sTjnKH3Irvlm-UPwfT5y74AhzhO7" RecordedValue="Ak280HLmROTyGC6_JYfrOcMOI2ir10pS5MQ4sTjnKH3Irvlm-UPwfT5y74AhzhO7" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+                <QueryStringParameter Name="" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+                <QueryStringParameter Name="jsonp" Value="LogCredCB1499768388741" RecordedValue="LogCredCB1499768388741" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+                <QueryStringParameter Name="" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+              </QueryStringParameters>
+            </Request>
+            <Request Method="POST" Guid="706ba022-fc30-4d67-8d5c-627f4c38e926" Version="1.1" Url="http://nerddinner.com/Search/GetMostPopularDinners" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+              <Headers>
+                <Header Name="Accept" Value="application/json, text/javascript, */*; q=0.01" />
+                <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+                <Header Name="Referer" Value="http://nerddinner.com/" />
+              </Headers>
+              <FormPostHttpBody>
+                <FormPostParameter Name="limit" Value="8" RecordedValue="8" CorrelationBinding="" UrlEncode="True" />
+              </FormPostHttpBody>
+            </Request>
+          </DependentRequests>
+          <Headers>
+            <Header Name="Referer" Value="http://nerddinner.com/" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Guid="37a861ae-8a6a-4626-a75a-cb3a8304cda9" Version="1.1" Url="http://nerddinner.com/mini-profiler-results" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Accept" Value="application/json, text/javascript, */*; q=0.01" />
+            <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+            <Header Name="Referer" Value="http://nerddinner.com/" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="id" Value="1b9d06c6-107f-4cf6-8b67-4f8f547450b9" RecordedValue="1b9d06c6-107f-4cf6-8b67-4f8f547450b9" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="popup" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+      </Items>
+    </TransactionTimer>
+  </Items>
+  <ValidationRules>
+    <ValidationRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidateResponseUrl, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="Response URL" Description="Validates that the response URL after redirects are followed is the same as the recorded response URL.  QueryString parameters are ignored." Level="Low" ExectuionOrder="BeforeDependents" />
+    <ValidationRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidationRuleResponseTimeGoal, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="Response Time Goal" Description="Validates that the response time for the request is less than or equal to the response time goal as specified on the request.  Response time goals of zero will be ignored." Level="Low" ExectuionOrder="AfterDependents">
+      <RuleParameters>
+        <RuleParameter Name="Tolerance" Value="0" />
+      </RuleParameters>
+    </ValidationRule>
+  </ValidationRules>
+</WebTest>

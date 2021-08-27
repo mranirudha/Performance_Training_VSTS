@@ -1,0 +1,11 @@
+C:\Performance_Training\Custom_Parameter\LoadTestingPlugin\obj\Debug\LoadTestingPlugin.csprojResolveAssemblyReference.cache
+C:\Performance_Training\Custom_Parameter\LoadTestingPlugin\bin\Debug\LoadTestingPlugin.dll
+C:\Performance_Training\Custom_Parameter\LoadTestingPlugin\bin\Debug\LoadTestingPlugin.pdb
+C:\Performance_Training\Custom_Parameter\LoadTestingPlugin\bin\Debug\Microsoft.VisualStudio.QualityTools.LoadTestFramework.dll
+C:\Performance_Training\Custom_Parameter\LoadTestingPlugin\bin\Debug\Microsoft.VisualStudio.QualityTools.WebTestFramework.dll
+C:\Performance_Training\Custom_Parameter\LoadTestingPlugin\bin\Debug\Microsoft.VisualStudio.QualityTools.Common.dll
+C:\Performance_Training\Custom_Parameter\LoadTestingPlugin\bin\Debug\Microsoft.VisualStudio.QualityTools.LoadTestFramework.xml
+C:\Performance_Training\Custom_Parameter\LoadTestingPlugin\bin\Debug\Microsoft.VisualStudio.QualityTools.WebTestFramework.xml
+C:\Performance_Training\Custom_Parameter\LoadTestingPlugin\bin\Debug\Microsoft.VisualStudio.QualityTools.Common.xml
+C:\Performance_Training\Custom_Parameter\LoadTestingPlugin\obj\Debug\LoadTestingPlugin.dll
+C:\Performance_Training\Custom_Parameter\LoadTestingPlugin\obj\Debug\LoadTestingPlugin.pdb

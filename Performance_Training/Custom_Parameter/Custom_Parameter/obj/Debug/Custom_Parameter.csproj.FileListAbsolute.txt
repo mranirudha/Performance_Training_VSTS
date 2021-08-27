@@ -1,0 +1,7 @@
+C:\Performance_Training\Custom_Parameter\Custom_Parameter\obj\Debug\Custom_Parameter.csprojResolveAssemblyReference.cache
+C:\Performance_Training\Custom_Parameter\Custom_Parameter\bin\Debug\Custom_Parameter.dll
+C:\Performance_Training\Custom_Parameter\Custom_Parameter\bin\Debug\Custom_Parameter.pdb
+C:\Performance_Training\Custom_Parameter\Custom_Parameter\bin\Debug\Microsoft.VisualStudio.QualityTools.WebTestFramework.dll
+C:\Performance_Training\Custom_Parameter\Custom_Parameter\bin\Debug\Microsoft.VisualStudio.QualityTools.WebTestFramework.xml
+C:\Performance_Training\Custom_Parameter\Custom_Parameter\obj\Debug\Custom_Parameter.dll
+C:\Performance_Training\Custom_Parameter\Custom_Parameter\obj\Debug\Custom_Parameter.pdb
